@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /var/www/cyberia
+          cd /home/lain/cyberia
           git pull origin master
           docker compose down
           docker compose up -d --build
